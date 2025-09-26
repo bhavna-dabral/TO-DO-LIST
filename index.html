@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated To-Do App</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <div class="app">
+    <h1>
+      My To-Do List
+      <button id="themeToggle" title="Toggle Dark/Light Mode">🌙</button>
+    </h1>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <input type="date" id="dateInput">
+      <button id="addBtn">+</button>
+    </div>
+
+    <div class="search-group">
+      <input type="text" id="searchInput" placeholder="Search tasks...">
+    </div>
+
+    <div class="filter-group">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+      <button class="filter-btn" data-filter="overdue">Overdue</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
